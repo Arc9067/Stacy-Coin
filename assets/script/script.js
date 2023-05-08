@@ -1,18 +1,7 @@
-function copyToClipboard(html) {
-  const element = document.createElement("textarea");
-  element.innerHTML = html;
-  document.body.appendChild(element);
-  element.select();
-  document.execCommand("copy");
-  document.body.removeChild(element);
-}
+const navToggle = document.querySelector(".nav-toggle");
+const header = document.querySelector(".header");
 
-let copyButton = document.getElementById("copy-button");
-copyButton.addEventListener("click", function (e) {
-  const html = "0x13def34a6d3b3da4daf19dfb1c8ca58ab55d3391";
-  copyToClipboard(html);
-  copyButton.innerHTML = `Contract Copied <i class="bi bi-bar-chart-fill"></i>`;
-  setTimeout(() => {
-    copyButton.innerHTML = `copy contract <i class="bi bi-bar-chart-fill"></i>`;
-  }, 2000);
+navToggle.addEventListener("click", () => {
+  navToggle.classList.toggle("open");
+  header.classList.toggle("open");
 });
