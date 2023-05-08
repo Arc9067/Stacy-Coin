@@ -245,4 +245,10 @@ div.header .inner a i:hover {
     font-size: 16px;
     line-height: 32px;
   }
+}
+#about p.special {
+  color: var(--first-color);
+}
+#about p:last-child {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

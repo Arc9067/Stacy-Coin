@@ -251,4 +251,10 @@ div.header {
       line-height: 32px;
     }
   }
+  p.special {
+    color: var(--first-color);
+  }
+  p:last-child {
+    color: #fff;
+  }
 }
