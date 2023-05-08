@@ -85,6 +85,7 @@ button.nav-toggle {
   position: absolute;
   right: 20px;
   top: 20px;
+  color: #000;
 }
 button.nav-toggle i {
   font-size: 32px;
